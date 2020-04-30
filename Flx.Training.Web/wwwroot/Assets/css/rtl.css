@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------------*/
+/*  RTL Fixing
+/*-----------------------------------------------------------------------------------*/
+
+.navbar-brand.rtl-opt {
+    float:left;
+}
+.domain-serch.rtl-opt input {
+    padding-right: 110px;
+}
+.rtl-opt .icon-button .share-icon {
+    left:0;
+    right:auto;
+}
+.news-letter-form.rtl-opt input[type="text"] {
+    padding-right:50px;
+}
+
+.rtl-opt ul.blog-author-name li i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.domain-serch.rtl span {
+    left: auto;
+    right: 10px;
+}
+.domain-serch.rtl button {
+    left: 10px;
+    right: auto;
+}
+.domain-serch.rtl input {
+    padding-left: 0px !important;
+    padding-right: 140px !important;
+
+}
+.text-right {
+    text-align: left;
+}
+
+.search-area button {
+    border: none;
+}
+
+.rtl-right {
+    float:right;
+    text-align:right;
+}
+
+.rtl-opt .blog-author {
+  padding: 10px 0 25px;
+}
+.next-blog-post.rtl-right {
+    text-align:right;
+}
+
