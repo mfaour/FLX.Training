@@ -18,7 +18,7 @@
     <!-- Site Title -->
     <title>FLX Training </title>
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700" rel="stylesheet">
+
     <!-- bootstrap main css -->
     <link rel="stylesheet" href="~/Assets/css/bootstrap.min.css">
     <!-- Bootstrap RTL css -->
@@ -40,7 +40,22 @@
 
     <!-- responsive css -->
     <link rel="stylesheet" href="~/Assets/css/responsive.css" type="text/css">
-
+    <style>
+        @@font-face {
+            font-family: "Lato-Bold";
+            src: url('assets/fonts/cairo/cairo-black.eot') format('embedded-opentype');
+            src: url('assets/fonts/cairo/cairo-black.woff') format('woff');
+            src: url('assets/fonts/cairo/cairo-black.woff2') format('woff2');
+        }
+        @@font-face {
+            font-family: 'Lato';
+            src: url('assets/fonts/cairo/cairo-regular.eot') format('embedded-opentype');
+            src: url('assets/fonts/cairo/cairo-regular.woff') format('woff');
+            src: url('assets/fonts/cairo/cairo-regular.woff2') format('woff2');
+        }
+       
+                     
+    </style>
 </head>
 <body data-spy="scroll" data-target="#header-menu">
     <!--[if lt IE 8]>
@@ -76,18 +91,42 @@
                         <div class="collapse navbar-collapse navbar-right" id="header-menu">
                             <nav>
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#home" class="smoothScroll">الصفحة الرئيسية</a></li>
-                                    <li><a href="#about" class="smoothScroll">حول</a></li>
-                                    <li><a href="#features" class="smoothScroll">الميزات</a></li>
-                                    <li><a href="#testimonials" class="smoothScroll">الشهادات - التوصيات</a></li>
-                                    <li><a href="#pricing" class="smoothScroll">التسعير</a></li>
-                                    <li><a href="#contact" class="smoothScroll">اتصل</a></li>
-                                    <li><a href="blog.html" class="smoothScroll">مدونة</a></li>
+                                    <li class="active"><a href="#home" class="smoothScroll">الرئيسية</a></li>
+                                    <li><a href="#about" class="smoothScroll">عن FLX</a></li>
+                                    <li class="active"><a href="#values" class="smoothScroll">القيم</a></li>
+                                    <li class="active"><a href="#testimonials" class="smoothScroll">الشهادات</a></li>
+                                    <li><a href="#pricing" class="smoothScroll">الباقات</a></li>
+                                    <li><a href="#contact" class="smoothScroll">اشترك معنا</a></li>
+                                    <li><a href="#footer" class="smoothScroll">تواصل معنا</a></li>
+
+                                </ul>
+
+                            </nav>
+
+
+
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-left" id="header-menu">
+                            <nav>
+                            
+                                <ul class="nav navbar-nav" style="float:left !important;">
+
+                                    <li><a href="#"><i class="fa fa-fw fa-instagram"></i> </a> </li>
+                                    <li><a href="#"><i class="fa fa-fw fa-twitter"></i> </a> </li>
+                                    <li><a href="#"><i class="fa fa-fw fa-whatsapp"></i> </a> </li>
+
                                 </ul>
                             </nav>
+
+
+
                         </div>
+                     
                         <!-- /.navbar-collapse -->
                     </div>
+
+               
                     <!-- /.container-fluid -->
                 </div>
             </div>
@@ -140,12 +179,12 @@
         </div>
     </section>
     <!-- about section -->
-    <section class="about-section section-ptb-3" id="about">
+    <section class="about-section section-pt" id="about">
         <div class="container">
             <div class="row ">
                 <div class="col-md-12 ">
                     <div class="themeix-section-heading-title">
-                        <h2 class="head-title">حول أبيكس</h2>
+                        <h2 class="head-title">عن FLX</h2>
                         <p class="light-300 color-change">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
                     </div>
                 </div>
@@ -162,14 +201,14 @@
                             <div class="about-appix-right-content">
                                 <h2 class="themeix-title-h1">أبليكس هو التطبيق الإنتاجية الجيل القادم</h2>
                                 <p class="para-mb">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
-                                <div class="themeix-button-group">
+                                @*<div class="themeix-button-group">
                                     <a href="#" class="themeix-btn themeix-danger">التحميل الان</a>
                                     <a href="#" class="themeix-btn bg-change themeix-info">التحميل الان</a>
-                                </div>
+                                </div>*@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    @*<div class="col-md-6">
                         <div class="about-appix-right-content">
                             <h2 class="themeix-title-h1">الحصول على الإنتاجية سكوردين أبيكس التطبيق</h2>
                             <p class="para-mb">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
@@ -183,15 +222,23 @@
                         <div class="about-appix-left-img">
                             <img src="~/Assets/images/about/2.jpg" alt="apps" class="img-responsive">
                         </div>
-                    </div>
+                    </div>*@
                 </div>
             </div>
         </div>
     </section>
     <!-- our-service-section -->
-    <section class="skew">
+    <section class="skew" id="values" >
         <div class="our-service-section bg-gradient">
             <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <div class="themeix-section-heading-title">
+                            <h2 class="head-title-white" style="color:#f5f5f5">قيمنا</h2>
+                            <p class="light-300 color-change" style="padding: 30px 0 0 0; color: #f5f5f5;">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="service-slider-section">
@@ -228,227 +275,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-item">
-                                <div class="service-main">
-                                    <div class="servic-icon">
-                                        <img src="~/Assets/images/service/icon-4.png" alt="services">
-                                    </div>
-                                    <div class="service-content">
-                                        <h3 class="themeix-sub-title">خادم سريع سريع</h3>
-                                        <p class="themeix-para-style">نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="service-main">
-                                    <div class="servic-icon">
-                                        <img src="~/Assets/images/service/icon-4.png" alt="services">
-                                    </div>
-                                    <div class="service-content">
-                                        <h3 class="themeix-sub-title">خادم سريع سريع</h3>
-                                        <p class="themeix-para-style">نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="service-main">
-                                    <div class="servic-icon">
-                                        <img src="~/Assets/images/service/icon-4.png" alt="services">
-                                    </div>
-                                    <div class="service-content">
-                                        <h3 class="themeix-sub-title">خادم سريع سريع</h3>
-                                        <p class="themeix-para-style">نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="service-main">
-                                    <div class="servic-icon">
-                                        <img src="~/Assets/images/service/icon-4.png" alt="services">
-                                    </div>
-                                    <div class="service-content">
-                                        <h3 class="themeix-sub-title">خادم سريع سريع</h3>
-                                        <p class="themeix-para-style">نقطة استخدام أبجد هوز هو أنه يحتوي على توزيع طبيعي أكثر أو أقل من الحروف</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- exclusive features -->
-    <section id="features" class="section-ptb">
-        <div class="exclusive-features-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="themeix-section-heading-title">
-                            <h2 class="head-title">الميزات الحصرية</h2>
-                            <p class="light-300">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
-                        </div>
-                    </div>
-                </div>
-                <!--The First row-->
-                <!--The First row-->
-                <div class="zenith-wrapper">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="feature-section highlight" data-index="0">
-                                <div class="feature-icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">تصميم رائع</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكلا ما، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="1">
-                                <div class="feature-icon">
-                                    <i class="fa fa-android"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">تصميم ودية موبايل</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكلا ما، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="2">
-                                <div class="feature-icon">
-                                    <i class="fa fa-bitbucket"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">التخزين المؤقت بسرعة فائقة</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكل أومي، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="3">
-                                <div class="feature-icon">
-                                    <i class="fa fa-calendar-check-o"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">خادم محسن</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكلا ما، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 hidden-xs padding-zero">
-                            <div class="phone-holder">
-                                <div id="fon"></div>
-                                <div class="hgh-linner hgi" data-index="0">
-                                    <img src="~/Assets/images/screenshort-image/1.jpg" class="attachment-highlight wp-post-image" alt="screen" />
-                                </div>
-                                <div class="hgh-linner hgi" data-index="1">
-                                    <img src="~/Assets/images/screenshort-image/2.jpg" class="attachment-highlight wp-post-image" alt="screensdst" />
-                                </div>
-                                <div class="hgh-linner hgi" data-index="2">
-                                    <img src="~/Assets/images/screenshort-image/3.jpg" class="attachment-highlight wp-post-image" alt="screen_09" />
-                                </div>
-                                <div class="hgh-rinner hgi" data-index="3">
-                                    <img src="~/Assets/images/screenshort-image/4.html" class="attachment-highlight wp-post-image" alt="screen_07" />
-                                </div>
-                                <div class="hgh-rinner hgi" data-index="4">
-                                    <img src="~/Assets/images/screenshort-image/5.jpg" class="attachment-highlight wp-post-image" alt="screen_08" />
-                                </div>
-                                <div class="hgh-rinner hgi" data-index="5">
-                                    <img src="~/Assets/images/screenshort-image/6.jpg" class="attachment-highlight wp-post-image" alt="screen_06" />
-                                </div>
-                                <div class="hgh-rinner hgi" data-index="6">
-                                    <img src="~/Assets/images/screenshort-image/6.jpg" class="attachment-highlight wp-post-image" alt="screen_06" />
-                                </div>
-                                <div class="hgh-rinner hgi" data-index="7">
-                                    <img src="~/Assets/images/screenshort-image/6.jpg" class="attachment-highlight wp-post-image" alt="screen_06" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="feature-section highlight" data-index="4">
-                                <div class="feature-icon">
-                                    <i class="fa fa-battery-2"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">قراءة بوضوح</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكل أومي، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="5">
-                                <div class="feature-icon">
-                                    <i class="fa fa-book"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">قراءة بوضوح</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكل أومي، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="6">
-                                <div class="feature-icon">
-                                    <i class="fa fa-bell"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">قراءة بوضوح</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكل أومي، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                            <div class="feature-section highlight" data-index="7">
-                                <div class="feature-icon">
-                                    <i class="fa fa-calendar-plus-o"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="themeix-feature-title">قراءة بوضوح</h3>
-                                    <p class="themeix-feature-style">هناك العديد من الاختلافات من الممرات من أبجد هوز المتاحة، ولكن الغالبية عانت شكل أومي، عن طريق النكتة حقن، أو الكلمات</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- .row .left-row -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- start app screenshort -->
-    <section id="screenshots" class="app-screenshorts-area section-pt">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="themeix-section-heading-title">
-                        <h2 class="head-title">التطبيق لقطات</h2>
-                        <p class="light-300">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="carousel" class="apps-carousel mobi-carousel">
-                        <img src="~/Assets/images/screenshort-image/1.jpg" alt="Carousel">
-                        <img src="~/Assets/images/screenshort-image/2.jpg" alt="Corousel">
-                        <img src="~/Assets/images/screenshort-image/3.jpg" alt="Carousel">
-                        <img src="~/Assets/images/screenshort-image/4.html" alt="Carousel">
-                        <img src="~/Assets/images/screenshort-image/5.jpg" alt="Carousel">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end app screenshort -->
-    <!-- start Trailer video -->
-    <section class="section-ptb" id="video">
-        <div class="vidoverlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <a class="autoplay" href="https://www.youtube.com/watch?v=iaj8ktgL3BY"><i class="fa fa-play-circle"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end Trailer video -->
+
     <!-- start our testimonials -->
     <section id="testimonials" class="our-testimonials-section section-ptb">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="themeix-section-heading-title">
-                        <h2 class="head-title">لدينا شهادات</h2>
+                        <h2 class="head-title">الشهادات</h2>
                         <p class="light-300">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
                     </div>
                 </div>
@@ -493,35 +334,13 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="themeix-section-heading-title">
-                            <h2 class="head-title">أحدث التسعير</h2>
+                            <h2 class="head-title">الباقات</h2>
                             <p class="light-300">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 wow fadeIn animated">
-                        <div class="single-pricing">
-                            <h2>أبيكس <span> ريغولار</span></h2>
-                            <div class="price-table">
-                                <span class="dollar-rate">$<b>19</b></span>
-                                <span class="dollar-cent">.99</span>
-                                <sub>/شهر</sub>
-                            </div>
-                            <ul class="pricing-features">
-                                <li><b>25GB</b> مساحة علي الانترنت</li>
-                                <li>مجانا أدوات بناء الموقع</li>
-                                <li>مسجل نطاق مجاني</li>
-                                <li><b>24/7/365</b> الدعم </li>
-                                <li>تسويق مجاني وأدوات سيو</li>
-                                <li><b>99.9%</b> وقت تشغيل الخدمة</li>
-                                <li><b>30</b> يوم ضمان استعادة الاموال</li>
-                            </ul>
-                            <div class="themeix-button-group">
-                                <a href="#" class="themeix-btn active-bg themeix-price-button-active">اطلب الان</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 wow fadeIn animated">
+                    <div class="col-xs-12 col-sm-3 wow fadeIn animated">
                         <div class="single-pricing active-box-shadow">
                             <h2>بريميوم <span>بريميوم  </span></h2>
                             <span class="price-tag">جمع</span>
@@ -531,39 +350,70 @@
                                 <sub>/شهر</sub>
                             </div>
                             <ul class="pricing-features">
-                                <li><b>25GB</b> مساحة علي الانترنت</li>
-                                <li>مجانا أدوات بناء الموقع</li>
-                                <li>مسجل نطاق مجاني</li>
-                                <li><b>24/7/365</b> الدعم </li>
-                                <li>تسويق مجاني وأدوات سيو</li>
-                                <li><b>99.9%</b> وقت تشغيل الخدمة</li>
-                                <li><b>30</b> يوم ضمان استعادة الاموال</li>
+                                <li>جلسات بالاضافة الى حصة تعليمية <b>25</b> مجموع</li>
+                                <li>طريقة تعليم صحيحة</li>
+
                             </ul>
-                            <div class="themeix-button-group">
-                                <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
-                            </div>
+                            @*<div class="themeix-button-group">
+                    <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
+                </div>*@
                         </div>
                     </div>
-                    <div class="col-xs-12  col-sm-4  wow fadeIn animated">
-                        <div class="single-pricing">
-                            <h2>بريميوم<span>بريميوم</span></h2>
-                            <div class="price-table">
-                                <span class="dollar-rate">$<b>49</b></span>
+                    <div class="col-xs-12 col-sm-3 wow fadeIn animated">
+                        <div class="single-pricing active-box-shadow">
+                            <h2>بريميوم <span>بريميوم  </span></h2>
+                            <span class="price-tag">جمع</span>
+                            <div class="price-table active-color appiex-active">
+                                <span class="dollar-rate">$<b>29</b></span>
                                 <span class="dollar-cent">.99</span>
                                 <sub>/شهر</sub>
                             </div>
                             <ul class="pricing-features">
-                                <li><b>25GB</b> مساحة علي الانترنت</li>
-                                <li>مجانا أدوات بناء الموقع</li>
-                                <li>مسجل نطاق مجاني</li>
-                                <li><b>24/7/365</b> الدعم </li>
-                                <li>تسويق مجاني وأدوات سيو</li>
-                                <li><b>99.9%</b> وقت تشغيل الخدمة</li>
-                                <li><b>30</b> يوم ضمان استعادة الاموال</li>
+                                <li>جلسات بالاضافة الى حصة تعليمية <b>25</b> مجموع</li>
+                                <li>طريقة تعليم صحيحة</li>
+
                             </ul>
-                            <div class="themeix-button-group">
-                                <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
+                            @*<div class="themeix-button-group">
+                    <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
+                </div>*@
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 wow fadeIn animated">
+                        <div class="single-pricing active-box-shadow">
+                            <h2>بريميوم <span>بريميوم  </span></h2>
+                            <span class="price-tag">جمع</span>
+                            <div class="price-table active-color appiex-active">
+                                <span class="dollar-rate">$<b>29</b></span>
+                                <span class="dollar-cent">.99</span>
+                                <sub>/شهر</sub>
                             </div>
+                            <ul class="pricing-features">
+                                <li>جلسات بالاضافة الى حصة تعليمية <b>25</b> مجموع</li>
+                                <li>طريقة تعليم صحيحة</li>
+
+                            </ul>
+                            @*<div class="themeix-button-group">
+                    <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
+                </div>*@
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 wow fadeIn animated">
+                        <div class="single-pricing active-box-shadow">
+                            <h2>بريميوم <span>بريميوم  </span></h2>
+                            <span class="price-tag">جمع</span>
+                            <div class="price-table active-color appiex-active">
+                                <span class="dollar-rate">$<b>29</b></span>
+                                <span class="dollar-cent">.99</span>
+                                <sub>/شهر</sub>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>جلسات بالاضافة الى حصة تعليمية <b>25</b> مجموع</li>
+                                <li>طريقة تعليم صحيحة</li>
+
+                            </ul>
+                            @*<div class="themeix-button-group">
+                    <a href="#" class="themeix-btn price-btn-cust">اطلب الان</a>
+                </div>*@
                         </div>
                     </div>
                 </div>
@@ -571,30 +421,7 @@
         </div>
     </section>
     <!-- end Latest Pricing section -->
-    <!-- start get appix now -->
-    <section id="get-apps" class="get-appix-setion section-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="themeix-section-heading-title">
-                        <h2 class="head-title">الحصول على أبكس الآن</h2>
-                        <p class="light-300">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="display-middle">
-                        <div class="table-middle">
-                            <a href="#" class="play-store-button"><i class="fa fa-android"></i> متجر بلاي</a>
-                            <a href="#" class="play-store-button itune-change-bg-color"><i class="fa fa-apple"></i> اي تيونز</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end get appix now -->
+
     <!-- start contact us -->
     <!-- start contact us -->
     <section id="contact">
@@ -604,7 +431,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="themeix-section-heading-title">
-                                <h2 class="head-title themeix-title-a-b-col-change title-color-change">اتصل بنا</h2>
+                                <h2 class="head-title themeix-title-a-b-col-change title-color-change">اشترك معنا</h2>
                                 <p class="light-300 para-color-change change-color">ومن الحقائق الثابتة منذ فترة طويلة أن القارئ سوف يصرف من قبل محتوى مقروء من صفحة عند النظر في تخطيطها. نقطة استخدام أبجد هوز هو ذلك</p>
                             </div>
                         </div>
@@ -620,7 +447,11 @@
                                         <input class="form-control" type="email" id="email" placeholder="Your Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea rows="5" class="form-control" name="comment" placeholder="Write Your Message" required></textarea>
+                                        <select rows="5" class="form-control" name="comment" placeholder="Write Your Message" required>
+                                            <option value="1000">باقة 1000</option>
+                                            <option value="1000">باقة 1000</option>
+                                            <option value="1000">باقة 1000</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <div class="themeix-button-group">
@@ -632,17 +463,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-overlay">
+                <div class="footer-overlay" id="footer">
                     <div class="container">
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="themeix-footer-bottom">
                                     <div class="inner-section">
-                                        <h5><a href="index.html"><img src="~/assets/images/footer-logo.png" alt="footer logo"></a></h5>
+                                        <h2>تواصل معنا عبر</h2>
                                         <ul class="footer-menu">
-                                            <li><a href="#">سياسة الخصوصية</a></li>
-                                            <li><a href="#">سياسة الاسترجاع</a></li>
-                                            <li><a href="#">تنصل</a></li>
+                                            <li><a href="#"><i class="fa fa-2x fa-instagram"></i> </a> </li>
+                                            <li><a href="#"><i class="fa fa-2x fa-twitter"></i> </a> </li>
+                                            <li><a href="#"><i class="fa fa-2x fa-whatsapp"></i> </a> </li>
                                         </ul>
                                         <h5>جميع المحتويات أبيكس <i class="fa fa-copyright"></i> 2017 - جميع الحقوق محفوظة - بفخر مع <a href="http://designingmarekt.com/">Designing Market</a></h5>
                                     </div>
