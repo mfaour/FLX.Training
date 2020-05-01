@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Whatsapp.NET" Version="1.2.2" />
+  </ItemGroup>
+
 </Project>
