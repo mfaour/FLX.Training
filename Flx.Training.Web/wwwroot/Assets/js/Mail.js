@@ -22,7 +22,7 @@ function SendMail() {
     mail.Package = $('#package').val();
     $.ajax({
         type: "POST",
-        url: "/Home/Send",
+        url: "/Home/Mail",
         data: JSON.stringify(mail),
         contentType: "application/json",
         dataType: "json",

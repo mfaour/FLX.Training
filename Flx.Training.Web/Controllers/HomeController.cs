@@ -37,7 +37,7 @@ namespace Flx.Training.Web.Controllers
 		//	return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		//}
 
-		public void Send([FromBody] MailInfo info)
+		public void Mail([FromBody] MailInfo info)
 		{
 			var smtp = new SmtpClient
 			{
