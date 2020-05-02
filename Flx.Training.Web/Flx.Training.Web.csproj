@@ -5,8 +5,4 @@
     <StartupObject>Flx.Training.Web.Program</StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>
