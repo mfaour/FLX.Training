@@ -48,8 +48,8 @@
            1. owl carousel
 ========================================== */  
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    autoplay:false,
+    loop: true,
+    autoplay: true,
     smartSpeed:1000,
     items:1,
     rtl  : true,
